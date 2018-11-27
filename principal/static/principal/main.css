@@ -9,3 +9,18 @@
   padding: 2em;
 }
 
+.sectionDark {
+  background-color: #cccccc;
+  padding: 2rem;
+}
+
+.coolStuffWrapper {
+  margin: 20px;
+}
+
+button.coolStuffbtn {
+  background-color: red;
+  color: white;
+  display: block;
+  margin: auto;
+}
