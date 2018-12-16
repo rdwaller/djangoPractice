@@ -16,8 +16,21 @@ Including another URLconf
 from django.contrib import admin
 from django.conf.urls import url, include
 
+#SETUP IMAGE UPLOAD
+from django.conf import settings
+from django.views.static import serve
+
+
 urlpatterns = [
     url('admin/', admin.site.urls),
-    url(r'^$', include ('principal.urls')),
+    url(r'^', include ('principal.urls')),
+    url(r'^blog/', include ('blog.urls')),
+    url(r'^contact/', include ('contact.urls')),
 ]
 
+if settings.DEBUG:
+    urlpatterns += [
+        url(r'^media/(?P<path>.*)$', serve, {
+            'document_root': settings.MEDIA_ROOT,
+        }),
+    ]

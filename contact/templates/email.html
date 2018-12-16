@@ -1,0 +1,21 @@
+{% extends 'principal/header.html' %}
+
+{% block content %}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 col-lg-12">
+        <h1>Contact Me</h1>
+        <p>
+          <form method="post">
+              {% csrf_token %}
+              {{ form.as_p }}
+              <div class="form-actions">
+                <button class="button" type="submit">Send</button>
+              </div>
+          </form>
+        </p>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

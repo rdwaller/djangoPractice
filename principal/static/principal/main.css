@@ -1,26 +1,53 @@
 
-.jumbotron {
-  text-align: center;
-  background: none;
+body {
+  background-color: #ECEEEF;
+  margin-bottom: 100px;
 }
 
-.sectionLight {
-  background-color: #eceeef;
-  padding: 2em;
+html {
+  position: relative;
+  min-height: 100%;
+}
+input {
+  width: 20%;
 }
 
-.sectionDark {
-  background-color: #cccccc;
-  padding: 2rem;
-}
-
-.coolStuffWrapper {
-  margin: 20px;
-}
-
-button.coolStuffbtn {
-  background-color: red;
-  color: white;
+label {
   display: block;
-  margin: auto;
+}
+
+textarea {
+  width: 30%;
+}
+
+.carousel {
+  width: 50%;
+  margin: 50px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px;margin: 0 0 0 15px;
+  background-color: #ECEEEF;
+}
+
+.mainContent {
+  display: inline-block;
+}
+
+.navbar-custom {
+  margin-bottom: 80px;
+  background-color: #ECEEEF;
+}
+
+.postImage {
+  width: 80%
+}
+
+.profilePic {
+  width: 50%;
 }
