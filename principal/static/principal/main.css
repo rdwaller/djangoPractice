@@ -35,10 +35,6 @@ textarea {
   background-color: #ECEEEF;
 }
 
-.mainContent {
-  display: inline-block;
-}
-
 .navbar-custom {
   margin-bottom: 80px;
   background-color: #ECEEEF;
@@ -49,5 +45,6 @@ textarea {
 }
 
 .profilePic {
-  width: 50%;
+  display: inline-block;
+  width: 95%;
 }
